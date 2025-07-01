@@ -3,7 +3,6 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-green)](https://fastapi.tiangolo.com/)
 [![SQLModel](https://img.shields.io/badge/SQLModel-Latest-red)](https://sqlmodel.tiangolo.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive university management system built with **FastAPI** and **SQLModel**, providing REST APIs for managing students, instructors, courses, and enrollments with role-based authentication.
 
@@ -139,17 +138,6 @@ A comprehensive university management system built with **FastAPI** and **SQLMod
 - Can drop courses (update enrollment status)
 - Limited access to other entities
 
-## Sample Data
-
-The `init_db.py` script creates sample data with the following login credentials:
-
-- **Admin**: admin@university.edu / admin123
-- **Instructor 1**: john.smith@university.edu / instructor123
-- **Instructor 2**: jane.doe@university.edu / instructor123
-- **Student 1**: alice.johnson@student.university.edu / student123
-- **Student 2**: bob.wilson@student.university.edu / student123
-- **Student 3**: carol.brown@student.university.edu / student123
-
 ## Authentication
 
 To access protected endpoints:
@@ -168,22 +156,6 @@ The system includes the following main entities:
 - **Courses**: Course information with instructor assignments
 - **Enrollments**: Student-course relationships with status and grades
 
-## Development
-
-### Adding New Features
-
-1. Create new models in `app/models.py`
-2. Add routes in the appropriate file under `app/routes/`
-3. Update permissions in `app/auth.py` if needed
-4. Include new routers in `main.py`
-
-### Testing
-
-Use the interactive API documentation at `/docs` to test endpoints, or use tools like:
-- Postman
-- curl
-- httpx (Python)
-
 ## Configuration
 
 Environment variables (in `.env` file):
@@ -193,15 +165,3 @@ Environment variables (in `.env` file):
 - `ALGORITHM`: JWT algorithm (default: HS256)
 - `ACCESS_TOKEN_EXPIRE_MINUTES`: Token expiration time
 
-## Production Deployment
-
-1. Change the `SECRET_KEY` to a secure random string
-2. Use a production database (PostgreSQL, MySQL, etc.)
-3. Set up proper CORS settings
-4. Use a production ASGI server (Gunicorn + Uvicorn)
-5. Implement proper logging and monitoring
-6. Set up SSL/TLS certificates
-
-## License
-
-This project is open source and available under the MIT License.
