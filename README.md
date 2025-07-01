@@ -6,11 +6,6 @@
 
 A comprehensive university management system built with **FastAPI** and **SQLModel**, providing REST APIs for managing students, instructors, courses, and enrollments with role-based authentication.
 
-## 🚀 Live Demo
-
-- **API Documentation**: [Interactive Swagger Docs](http://your-deployment-url/docs)
-- **API Base URL**: `http://your-deployment-url`
-
 ## 📋 Features
 
 - ✅ **JWT Authentication** with role-based access control
