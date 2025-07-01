@@ -1,0 +1,9 @@
+fastapi[standard]
+sqlmodel
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+gunicorn
+psycopg2-binary
+pymysql
